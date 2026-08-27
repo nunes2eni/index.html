@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../layout"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Área de Trabalho"
+	}
+}
