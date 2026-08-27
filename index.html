@@ -1,0 +1,501 @@
+<INDEX class="html">
+<head>
+    <title>NICACIO BARBER'S</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+        <h1>NICACIO</h1>
+        <span>BARBER'S</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#">INÍCIO</a>
+            <a href="#servicos">SERVIÇOS</a>
+            <a href="#agendar">AGENDAR</a>
+            <a href="#sobre">SOBRE</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+
+        <a href="#agendamento" class="btn-header">
+            AGENDAR
+        </a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+         <span class="subtitle">
+            SEU TEMPO, SEU ESTILO.
+         </span>
+
+         <h2>
+            Agende seu horário.
+         </h2>
+
+         <div class="linha"></div>
+
+         <p>
+            Escolha o serviço, a data, o horário e garanta seu atendimento.
+         </p>
+        </div>
+    </section>
+
+    <section class="agendamento" id="agendamento">
+        <div class="booking-container">
+
+            <div class="formulario">
+                <h2>NOVO AGENDAMENTO</h2>
+
+                <form>
+                    <label for="servico">
+                        Serviço
+                    </label>
+                    <select id="servico">
+
+                        <option value="">
+                            Selecione o serviço
+                        </option>
+
+                        <option value="corte">
+                            Corte de cabelo
+                        </option>
+
+                        <option value="barba">
+                            Barba
+                        </option>
+                        
+                        <option value="Corte + Barba">
+                            Corte + Barba
+                        </option>
+                    </select>
+
+                    <div class="linha-form">
+
+                    <div>
+
+                        <label for="data">
+                            Data
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                        >
+                    </div>
+
+                    <div>
+
+                        <label for="horario">
+                            Horário
+                        </label>
+
+                        <select id="horario">
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>18:30</option>
+                            <option>19:30</option>
+                            <option>20:30</option>
+                            <option>21:30</option>
+                            <option>22:30</option>
+                            <option>23:30</option>
+                        </select>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <label for="nome">
+        Nome
+    </label>
+
+    <input
+        type="text"
+        id="nome"
+        placeholder="Digite seu nome"
+    >
+
+    <label for="whatsapp">
+        WhatsApp
+    </label>
+
+    <input
+        type="tel"
+        id="whatsapp"
+        placeholder="Digite seu Número"
+        >
+
+        <button type="submit">
+            CONFIRMAR AGENDAMENTO
+        </button>
+
+    </form>
+</div>
+
+
+<div class="resumo">
+
+    <h2>
+        RESUMO DO AGENDAMENTO
+    </h2>
+
+    <div class="resumo-item">
+        <span>Serviço</span>
+        <strong id="resumo-servico">-</strong>
+    </div>
+
+    <div class="resumo-item">
+        <span>Data</span>
+        <strong id="resumo-data">-</strong>
+    </div>
+
+    <div class="resumo-item">
+        <span>Nome</span>
+        <strong id="resumo-nome">-</strong>
+    </div>
+
+    <div class="resumo-item">
+        <span>WhatsApp</span>
+        <strong id="resumo-whatsapp">-</strong>
+    </div>
+
+    <div class="importante">
+
+        <h3>IMPORTANTE</h3>
+
+        <p>
+            Chegue com 10 minutos de antecedência.
+        </p>
+
+        <p>
+            Em caso de imprevistos, entre em contato.
+        </p>
+    </div>
+</div>
+</section>
+
+
+<footer id="contato">
+    <div class="social">
+        Instagram &nbsp;&nbsp; WhatsApp
+    </div>
+
+    <p>
+          © 2026 NICACIO BARBERS.
+            TODOS OS DIREITOS RESERVADOS.
+    </p>
+</footer>
+
+     <script src="script.js"></script>
+
+</body>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f7f6f3;
+        color: #151515;
+    }
+
+    .header {
+        height: 90px;
+        background: #080808;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6%;
+        color: white;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        letter-spacing: 8px;
+        font-weight: normal;
+    }
+
+    .logo span {
+        display: block;
+        color: #c5a15b;
+        font-size: 12px;
+        letter-spacing: 6px;
+        margin-top: 3px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 35px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #c5a15b;
+    }
+
+    .btn-header {
+        background: #c5a15b;
+        color: #111;
+        text-decoration: none;
+        padding: 16px 25px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .hero {
+        height: 360px;
+        background: 
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80");
+
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding-left: 7%;
+        color:white
+    }
+
+    .hero-content {
+        max-width: 550px;
+    }
+
+    .subtitle {
+        color: #c5a15b;
+        font-size: 14x;
+        letter-spacing: 2px;
+    }
+
+    .hero h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 58px;
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+    .linha {
+        width: 70px;
+        height: 2px;
+        background: #c5a15b;
+        margin: 20px 0;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #ddd;
+    }
+
+    .agendamento {
+        padding: 70px 20px;
+    }
+
+    .booking-container {
+        max-width: 1050px;
+        margin: auto;
+        background: white;
+        border: 1px solid #e5e5e5;
+        border-radius: 10px;
+        padding: 35px;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 40px;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+    }
+
+    .formulario {
+        padding-right: 35px;
+        border-right: 1px solid #ddd;
+    }
+
+    .formulario h2,
+    .resumo h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    input,
+    select {
+        width: 100%;
+        height: 48px;
+        border: 1px solid #d5d5d5;
+        border-radius: 5px;
+        padding: 0 14px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        background: white;
+    }
+
+    input:focus,
+    select: focus {
+        outline: none;
+        border-color: #c5a15b
+    }
+
+    .linha-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        background: #111;
+        color: white;
+        border: none;
+        border-radus: 5px;
+        font-size:13px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #c5a15b;
+        color: #111;
+    }
+
+    .resumo {
+        padding-left: 5px;
+    }
+
+    .resumo h2 {
+        position: relative;
+    }
+
+    .resumo h2::after {
+        conten: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: #c5a15b;
+        margin-top: 12px;
+    }
+
+    .resumo-item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .resumo-item strong {
+        font-weight: normal;
+        color: #555;
+    }
+
+    .importante {
+        margin-top: 30px;
+        padding: 20px;
+        background: #f5f1e8;
+        border-radius: 6px;
+    }
+
+    .importante h3 {
+        color: #a17c36;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .importante p {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        background: #080808;
+        color:white;
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 2px solid #c5a15b;
+    }
+
+    .social {
+        color:#c5a15b;
+        margin-bottom: 25px;
+    }
+
+    footer p {
+        color: #aaa;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 800px) {
+
+        .header {
+            padding 0 20px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .btn-header {
+            padding: 12px 16px;
+        }
+
+        .hero {
+            height: 330px;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+        }
+
+        .booking-container {
+            grid-template-columns: 1fr;
+            padding: 25px;
+        }
+
+        .formulario {
+            padding-right: 0;
+            border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 30px;
+        }
+
+        .linha-form {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+        
+</style>
+</INDEX>
